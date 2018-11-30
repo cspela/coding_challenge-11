@@ -15,8 +15,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
   
+  <!-- https://michalsnik.github.io/aos/  -->
+  <!-- Animate On Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- TITLE -->
   <title>Frontend Mentor | Huddle landing page with alternating sections</title>
+
 </head>
 
 
@@ -32,9 +37,9 @@
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
         <button class="btn btn-primary">Get Started For Free</button>
-        <img id="mockups" src="./images/screen-mockups.svg">
+        <img id="mockups" src="./images/screen-mockups.svg" data-aos="fade-zoom-in" data-aos-duration="2500">
       </div>
-      <section class="flex-container">
+      <section class="flex-container" data-aos="fade-zoom-in" data-aos-duration="2500">
         <div>
           <img class="icon" src="./images/icon-communities.svg">
           <p class="number">1.4k+</p>
@@ -52,12 +57,12 @@
       <img class="wave-desktop" src="./images/bg-section-top-desktop-1.svg">
       <img class="wave-mobile" src="./images/bg-section-top-mobile-1.svg">
       <article class="flex-container paleBlue">
-        <section>
+        <section data-aos="fade-zoom-in" data-aos-duration="2500">
           <h2>Grow Together</h2>
           <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
           Think of the insightful conversations you miss out on with a feedback form.</p>
         </section>
-        <aside>
+        <aside data-aos="fade-zoom-in" data-aos-duration="2500">
           <img src="./images/illustration-grow-together.svg">
         </aside>
       </article>
@@ -67,10 +72,10 @@
 
     <div id="flowing-conversation">
       <article class="flex-container middleWhite">
-        <aside>
+        <aside data-aos="fade-zoom-in" data-aos-duration="2500">
           <img src="./images/illustration-flowing-conversation.svg">
         </aside>
-        <section>
+        <section data-aos="fade-zoom-in" data-aos-duration="2500">
           <h2>Flowing Conversations</h2>
           <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
           just-in-time loading for a more natural flow.</p>
@@ -82,12 +87,12 @@
       <img class="wave-desktop" src="./images/bg-section-top-desktop-2.svg">
       <img class="wave-mobile" src="./images/bg-section-top-mobile-2.svg">
       <article class="flex-container paleBlue" id="users">
-        <section>
+        <section data-aos="fade-zoom-in" data-aos-duration="2500">
           <h2>Your Users</h2>
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
           once signed in to your app, your users can start chatting immediately.</p>
         </section>
-        <aside>
+        <aside data-aos="fade-zoom-in" data-aos-duration="2500">
           <img src="./images/illustration-your-users.svg">
         </aside>
       </article>
@@ -96,7 +101,7 @@
     </div>
     <!-- <img src="./images/bg-section-bottom-desktop-2.svg"> -->
 
-    <article class="flex-container col-1" id="get-started">
+    <article class="flex-container col-1" id="get-started" data-aos="fade-zoom-in" data-aos-duration="2500">
       <h2>Ready To Build Your Community?</h2>
       <butoon class="btn btn-primary">Get Started For Free</butoon> 
     </article>
@@ -106,7 +111,7 @@
   <img class="wave-desktop" src="./images/bg-footer-top-desktop.svg">
   <img class="wave-mobile" src="./images/bg-footer-top-mobile.svg">
   <footer class="flex-container">
-    <div class="info"> 
+    <div class="info" data-aos="fade-zoom-in" data-aos-duration="2500"> 
       <img src="./images/logo-white.svg" class="logo">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
@@ -131,7 +136,7 @@
         </span>
       </p>
     </div>
-    <div class="news">
+    <div class="news" data-aos="fade-zoom-in" data-aos-duration="2500">
       <div>
         <h3>Newsletter</h3>
         <p id="newsletter">
@@ -139,7 +144,7 @@
         </p>
       </div>
       <div>
-        <input type="email" name="emailaddress">
+        <input type="email" name="emailaddress" placeholder="Enter your email">
         <button id="sub">Subscribe</button>
       </div>
     </div>
@@ -151,5 +156,11 @@
       This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
     </p>
   </footer> -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

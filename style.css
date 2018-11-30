@@ -37,6 +37,7 @@ img{
     border-radius: 3em;
     border: 1px solid hsl(322, 100%, 66%);
     text-align: center;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .btn-primary{
@@ -47,6 +48,11 @@ img{
     background: hsl(322, 100%, 66%);
 }
 
+.btn-primary:hover {
+    background: white;
+    color: hsl(322, 100%, 66%);
+}
+
 header{
 	padding: 5.5% 4.5% 4.4% 5.5%;
 }
@@ -54,6 +60,11 @@ header{
 header > button.btn{
 	background: white;
     color: hsl(322, 100%, 66%);
+}
+
+header > button.btn:hover {
+	color: white;
+   	background: hsl(322, 100%, 66%);
 }
 
 .content article{
@@ -95,10 +106,11 @@ article > div > p{
 
 aside{
  	width: 45%;
+ 	margin-right: 1%;
 }
 
 section{
-	width: 43%;
+	width: 44%;
 }
 
 section > p{
@@ -137,11 +149,6 @@ section.flex-container{
     padding-bottom: 4%;
 }
 
-/*div#grow-together::before{content: url(./images/bg-section-top-desktop-1.svg);background-color: hsl(207, 100%, 98%);}
-div#grow-together::after{content: url(./images/bg-section-bottom-desktop-1.svg);}
-div#your-users::before{content: url(./images/bg-section-top-desktop-2.svg);background-color: hsl(207, 100%, 98%);}
-div#your-users::after{content: url(./images/bg-section-bottom-desktop-2.svg);}
-*/
 .content article.middleWhite{
     padding-top: 12.4%;
     padding-bottom: 6.6%;
@@ -173,11 +180,9 @@ footer{
 	padding-bottom: 5%;
 }
 
-/*div#foot::before{content: url(./images/bg-footer-top-desktop.svg); background-color: hsl(192, 100%, 9%);}
-*/
 .info {
 	max-width: 25%;
-	padding-top: 8.3%;
+	padding-top: 9%;
     padding-left: 8.3%;
 }
 
@@ -214,20 +219,26 @@ footer > div > p {
 input, button#sub{
 	border-radius: 0.5em;
 	font-size: 1em;
-	padding: 3% 0%;
+	padding: 3% 3%;
 }
 
 input{
     margin-right: 6%;
     margin-bottom: 3%;
-    width: 51%;
+    width: 45%;
 }
 
 #sub{
 	width: 25.8%;
     color: white;
     background: hsl(322, 100%, 66%);
-    border-color: hsl(322, 100%, 66%);;
+    border-color: hsl(322, 100%, 66%);
+    font-weight: 700;
+}
+
+#sub:hover{
+	color: hsl(322, 100%, 66%);
+	background: white;
 }
 
 #email{
@@ -242,6 +253,10 @@ input{
 
 .wave-mobile{
 	display: none;
+}
+
+.fab:hover{
+	color: hsl(322, 100%, 66%);
 }
 
 @media only screen and (max-width: 700px) {
@@ -272,12 +287,6 @@ input{
 		margin: 5% 0;
 	}
 
-/*	div#grow-together::before{content: url(./images/bg-section-top-mobile-1.svg);background-color: hsl(207, 100%, 98%);}
-	div#grow-together::after{content: url(./images/bg-section-bottom-mobile-1.svg);}
-	div#your-users::before{content: url(./images/bg-section-top-mobile-2.svg);background-color: hsl(207, 100%, 98%);}
-	div#your-users::after{content: url(./images/bg-section-bottom-mobile-2.svg);}
-	div#foot::before{content: url(./images/bg-footer-top-mobile.svg); background-color: hsl(192, 100%, 9%);}
-*/
 	.logo{
 		width: 29%;
 	    height: 29%;
@@ -406,6 +415,7 @@ input{
 	#get-started{
 		padding-bottom: 66.8%;
 	}
+
 	#get-started h2 {
 	    margin-left: 1.5%;
 	    font-size: 24px;
@@ -429,7 +439,6 @@ input{
 		padding-right: 7.3%;
 	}
 
-
 	footer.flex-container{
 		flex-direction: column-reverse;
 	}
@@ -452,8 +461,8 @@ input{
 	}
 
 	input{
-		padding: 4% 0%;
-	    width: 99%;
+		padding: 4% 4%;
+    	width: 91%;
 	}
 
 	footer .logo{
@@ -496,5 +505,3 @@ input{
 		max-width: 35%;
 	}
 }
-
-
